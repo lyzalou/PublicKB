@@ -31,12 +31,12 @@
 ### Overview
 
 There are two CLI interfaces available on CenturyLink Cloud, GO based
-CLI for API v2 [(explains here, currently version 1.1)](https://github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](//github.com/CenturyLinkCloud/clc-python-sdk)
+CLI for API v2 [(explains here, currently version 1.1)](https://github.com/CenturyLinkCloud/clc-go-cli) and [Python based CLI for API v1 and v2](https://github.com/CenturyLinkCloud/clc-python-sdk)
 
-For accounts, users, [API v1](//ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](//www.ctl.io/api-docs/v2/) can be used to access this information.
+For accounts, users, [API v1](https://ca.ctl.io/api-docs/v1/u5o/) provides the access to this information. For the rest of the data, [API v2](https://www.ctl.io/api-docs/v2/) can be used to access this information.
 
-The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md).  The pre-complied windows CLI executable can be downloaded from [here](//github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli.exe).
-The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [CenturyLink Cloud CLI GitHub release page](//github.com/CenturyLinkCloud/clc-go-cli/releases).  
+The Python based SDK is crossed platform, the CLI can be ran on any Python 2.7 environment.  For detail usage of Python CLI and download, please see its [GitHub repository](https://github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI).  The pre-complied windows CLI executable can be downloaded from [here](https://github.com/CenturyLinkCloud/clc-python-sdk/raw/master/src/dist/clc-cli).
+The GO based CLI can be run on Mac OSX, Linux and Windows. For release notes and download page, please see the [CenturyLink Cloud CLI GitHub release page](https://github.com/CenturyLinkCloud/clc-go-cli/releases).  
 The resources available on both tools will output similar results, at this time, certain functions are only available on API v1, hence the need of both tools to capture all the functionalities of the platform.
 
 Comparison of the two CLI tools:
@@ -54,7 +54,7 @@ Comparison of the two CLI tools:
 -   Understanding of CenturyLink Cloud portal
 -   Scripting knowledge will help on fully utilizing the CLI
 -   Python 2.7 installed in the environment for Python based CLI
--   API user account [please see this KB for detail](//www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
+-   API user account [please see this KB for detail](https://www.ctl.io/knowledge-base/accounts-&-users/creating-users/)
 
 ### Keywords
 When running commands (GO CLI command/Python CLI command)
@@ -62,7 +62,7 @@ When running commands (GO CLI command/Python CLI command)
 -   name - name of the server or group, when creating a new server, the length limit is 6 characters
 -   location - name of the data centers (e.g. IL1, VA1, CA1)
 -   network-name/network - name of the VLAN, [they can be listed using CLI](#read-commands)
--   type - server type, either standard or hyperscale
+-   type - server type, either standard or Hyperscale
 -   storage-type/backup-level - storage type, current option is standard
 -   group-name/group - name of the group within the account
 -   configuration-id - ID of bare metal from output of `clc data-center get-baremetal-capabilities`
@@ -77,15 +77,15 @@ This tool enables system administrators to interface with CenturyLink Cloud with
 
 ### Installation of CenturyLink Cloud CLI
 
-***In order to make easy distintion between the two CLIs, clc-cli is the Python based tool and clc is the GO based tool.***
+***In order to make easy distinction between the two CLIs, clc-cli is the Python based tool and clc is the GO based tool.***
 
 **Python Based CLI**
 
-Installation instruction is available [here](//github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the CenturyLink Cloud Python SDK and CLI:
+Installation instruction is available [here](https://github.com/CenturyLinkCloud/clc-python-sdk).  If pip is installed, then the following command will installed the CenturyLink Cloud Python SDK and CLI:
 ```
 pip install clc-sdk
 ```
-For authentication, it can be several way, please see the [README page of the CLI](//github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md#authentication).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
+For authentication, it can be several way, please see the [README page of the CLI](https://github.com/CenturyLinkCloud/clc-python-sdk/blob/master/README_CLI.md#authentication).  In order to use a system configuration file, a clc.ini (Windows) or clc_config (POSIX) needs to be created.  An example is shown below:
 ```
 [global]
 V1_API_KEY=
@@ -133,9 +133,9 @@ Commands:
 **GO Based CLI**
 
 Installation is simple for the GO based CLI. Download the executable and run it. The detail
-of the installation steps can be found [here](//github.com/CenturyLinkCloud/clc-go-cli).
+of the installation steps can be found [here](https://github.com/CenturyLinkCloud/clc-go-cli).
 A configuration file can be set up with account information, the detail
-steps are located [here](//github.com/CenturyLinkCloud/clc-go-cli#set-up-the-configuration-file).
+steps are located [here](https://github.com/CenturyLinkCloud/clc-go-cli#set-up-the-configuration-file).
 
 Below is a sample configuration file:
 ```
@@ -945,5 +945,5 @@ clc update --event Server.Deleted --recursive true --target-uri "https://zapier.
 ```
 
 ### Support
-* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](//t3n.zendesk.com/tickets/new).
-* For CLI bugs, please visit [CenturyLink Cloud CLI Github](//github.com/CenturyLinkCloud/clc-go-cli/issues) and [CenturyLink Cloud Python SDK](//github.com/CenturyLinkCloud/clc-python-sdk/issues)
+* For issues related to cloud infrastructure (VM's, network, etc), or is you experience a problem deploying any Blueprint or Script Package, please open a CenturyLink Cloud Support ticket by emailing [help@ctl.io](mailto:help@ctl.io) or [through the CenturyLink Cloud Support website](https://t3n.zendesk.com/tickets/new).
+* For CLI bugs, please visit [CenturyLink Cloud CLI Github](https://github.com/CenturyLinkCloud/clc-go-cli/issues) and [CenturyLink Cloud Python SDK](https://github.com/CenturyLinkCloud/clc-python-sdk/issues)

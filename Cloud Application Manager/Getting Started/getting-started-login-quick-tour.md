@@ -105,7 +105,7 @@ ___
 
 **Help**
 
-Get help from our [Knowledge Base](../../) or contact [support](mailto:cloudsupport@centurylink.com).
+Get help from our [Knowledge Base](../../../) or contact [support](mailto:cloudsupport@centurylink.com).
 
 ![getting-started-login-7.png](../../images/cloud-application-manager/getting-started-login-7.png)
 
