@@ -1,7 +1,7 @@
 {{{
 "title": "Cloud Platform - Release Notes: September 12, 2017",
 "date": "9-12-2017",
-"author": "Andy Watson",
+"author": "Andy Jamestown Watson",
 "attachments": [],
 "contentIsHTML": false
 }}}
